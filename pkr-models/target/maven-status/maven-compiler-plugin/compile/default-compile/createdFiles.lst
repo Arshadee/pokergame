@@ -1,0 +1,3 @@
+io/poker/models/Card.class
+io/poker/models/Hand.class
+io/poker/models/HandRank.class

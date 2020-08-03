@@ -1,0 +1,4 @@
+io/poker/core/IFunctions.class
+io/poker/core/AbstractRulesExecutor.class
+io/poker/core/Deck.class
+io/poker/core/IRankRule.class

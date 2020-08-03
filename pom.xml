@@ -38,6 +38,7 @@
 		<module>pkr-game-fivecards</module>
 		<module>pkr-models</module>
 		<module>pkr-config</module>
+		<module>pkr-game-abstraction</module>
 	</modules>
 
 </project>

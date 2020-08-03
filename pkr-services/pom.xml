@@ -23,7 +23,7 @@
 		</dependency>
 		<dependency>
 			<groupId>io.poker</groupId>
-			<artifactId>pkr-game-fivecards</artifactId>
+			<artifactId>pkr-game-abstraction</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>

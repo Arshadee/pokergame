@@ -56,9 +56,6 @@ public class HighCardsTest {
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 
-		//StraightFlush straightFlush = new StraightFlush();
-
-		//IRankRule rule = straightFlush.check(hand1);
 		List<IRankRule> rules = (List<IRankRule>) rulesExecutor.getRuleSetObjects();
 		rules = rulesExecutor.chain(rules);
 		

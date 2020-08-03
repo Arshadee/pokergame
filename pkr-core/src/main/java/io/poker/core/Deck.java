@@ -11,7 +11,6 @@ public class Deck {
 	
 	public  List<Card> create(){
 		List<Card> deck = new ArrayList<Card>();
-		//public Card(String rankName, Integer rankValue, String suite) {
 		/*
 		 * A=14 || 1
 		 * K=13

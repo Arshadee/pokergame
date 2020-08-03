@@ -11,8 +11,6 @@ import io.poker.core.IRankRule;
 import io.poker.models.Card;
 import io.poker.models.Hand;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 public class FlushTest {
 	
 	IRankRule set = new Flush();

@@ -35,7 +35,13 @@ public class Hand {
 
 	@Override
 	public String toString() {
-		return "Hand [hand=" + hand + ", "+System.lineSeparator()+"handRank=" + handRank + "]";
+		String output = "Hand [hand=" + hand + ", "+System.lineSeparator()+"handRank=" + handRank + "]";//+System.lineSeparator();
+		output =output+"\n -----> \n";
+		for(Card card : hand) {
+			output = output+"["+card.getRankName()+" "+card.getSuite()+"] ";
+		}
+		output = output+System.lineSeparator()+" handRank = " + handRank;
+		return output;
 	}
 	
 	

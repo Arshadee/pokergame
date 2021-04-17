@@ -7,6 +7,13 @@ import java.util.Map;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for ThreeKind Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class ThreeKind implements IRankRule {
 
 	private static final Integer RANK = 6;

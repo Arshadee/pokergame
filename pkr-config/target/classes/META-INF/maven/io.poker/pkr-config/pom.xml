@@ -11,10 +11,12 @@
 	<name>pkr-config</name>
 	<description>house config data spring di</description>
 	<dependencies>
+	<!--  
 		<dependency>
 			<groupId>io.poker</groupId>
 			<artifactId>pkr-controllers</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		-->
 	</dependencies>
 </project>

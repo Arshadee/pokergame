@@ -13,7 +13,13 @@ import org.reflections.Reflections;
 import io.poker.models.Card;
 import io.poker.models.Hand;
 import io.poker.models.HandRank;
-
+/**
+ * This abstract class houses the core rules functionality
+ * to be extend for specific implementations with specific rulesets
+ * 
+ * @author arshadmayet
+ *
+ */
 public abstract class AbstractRulesExecutor {
 
 	public AbstractRulesExecutor() {

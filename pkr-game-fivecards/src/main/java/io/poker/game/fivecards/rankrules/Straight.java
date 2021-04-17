@@ -6,6 +6,13 @@ import java.util.List;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for Straight Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class Straight implements IRankRule {
 
 	private static final Integer RANK = 5;

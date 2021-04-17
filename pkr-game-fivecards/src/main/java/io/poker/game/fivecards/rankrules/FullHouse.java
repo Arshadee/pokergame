@@ -5,6 +5,13 @@ import java.util.List;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for FullHouse Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class FullHouse implements IRankRule {
 
 	private static final Integer RANK = 3;

@@ -3,6 +3,12 @@ package io.poker.models;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class to be instantiated for object to hold the hand thats dealt and its rank
+ * 
+ * @author arshadmayet
+ *
+ */
 public class Hand {
 	
 	private List<Card> hand;

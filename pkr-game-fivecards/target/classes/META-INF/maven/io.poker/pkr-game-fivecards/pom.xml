@@ -19,6 +19,11 @@
 			<version>${project.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>io.poker</groupId>
+			<artifactId>pkr-shuffle-abstraction</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 		<dependency>
@@ -36,6 +41,14 @@
 			<version>5.6.2</version>
 			<scope>test</scope>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-test -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>2.5</version>
+    <scope>test</scope>
+</dependency>
+</dependencies>
 
-	</dependencies>
+	
 </project>

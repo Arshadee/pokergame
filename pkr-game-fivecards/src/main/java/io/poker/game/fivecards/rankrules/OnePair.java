@@ -7,6 +7,13 @@ import java.util.Map;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for OnePair Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class OnePair implements IRankRule {
 
 	private static final Integer RANK = 8;

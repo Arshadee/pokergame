@@ -1,12 +1,20 @@
 package io.poker.game.fivecards.rankrules;
 
 import java.util.HashMap;
+
 import java.util.List;
 import java.util.Map;
 
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for Flush Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class Flush implements IRankRule {
 
 	private static final Integer RANK = 4;

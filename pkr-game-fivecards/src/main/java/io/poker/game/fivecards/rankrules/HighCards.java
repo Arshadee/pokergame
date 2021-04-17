@@ -5,6 +5,13 @@ import java.util.List;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for HighCards Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class HighCards implements IRankRule {
 
 	private static final Integer RANK = 9;

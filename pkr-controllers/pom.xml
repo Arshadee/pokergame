@@ -22,6 +22,12 @@
 			<artifactId>pkr-models</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		
+	    <dependency>
+			<groupId>io.poker</groupId>
+			<artifactId>pkr-config</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
 		<dependency>

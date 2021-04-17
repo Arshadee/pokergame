@@ -7,6 +7,13 @@ import java.util.Map;
 import io.poker.core.IRankRule;
 import io.poker.models.Card;
 
+/**
+ * Implementation for FourKind Rank
+ * implements IRankRule
+ * 
+ * @author arshadmayet
+ *
+ */
 public class FourKind implements IRankRule {
 
 	private static final Integer RANK = 2;

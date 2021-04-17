@@ -10,10 +10,10 @@
   <description>abstraction layer to decouple from specific game implementation</description>
   
   <dependencies>
-  <dependency>
+  	<dependency>
 			<groupId>io.poker</groupId>
 			<artifactId>pkr-game-fivecards</artifactId>
 			<version>${project.version}</version>
-		</dependency>
-		</dependencies>
+	</dependency>
+</dependencies>
 </project>

@@ -39,6 +39,8 @@
 		<module>pkr-models</module>
 		<module>pkr-config</module>
 		<module>pkr-game-abstraction</module>
+		<module>pkr-shuffle-abstraction</module>
+		<module>pkr-shuffle-myshuffle</module>
 	</modules>
 
 </project>

@@ -6,7 +6,6 @@ import java.io.Serializable;
  * This class is a card model
  * 
  * @author arshad mayet
- * @version 1.0 Aug 2, 2020
  *
  */
 public class Card implements Serializable {
@@ -19,6 +18,7 @@ public class Card implements Serializable {
 	private String rankName;
 	private Integer rankValue;
 	private String suite;
+	private boolean played;
 
 	/**   *
 	 * 
@@ -29,6 +29,7 @@ public class Card implements Serializable {
 		this.rankName =  rankName;
 		this.rankValue = rankValue;
 		this.suite = suite;
+		this.played = false;
 	}
 
 	public String getRankName() {
@@ -55,14 +56,30 @@ public class Card implements Serializable {
 		this.suite = suite;
 	}
 	
-	//flip = hand has a card with a rank 2
-	// to change the value of Ace
+	/**
+	 * This method switches cards with a rank 3
+	 * to change the value of Ace
+	 * 
+	 * flip = hand has a card with a rank 2
+	 * to change the value of Ace
+	 * 
+	 * @param flip
+	 * @return
+	 */
 	public Integer getRankValue(boolean flip) {
 		if(rankName.equals("Ace") && flip) {
 		return 1;
 		}else {
 			return rankValue;
 		}
+	}
+
+	public boolean isPlayed() {
+		return played;
+	}
+
+	public void setPlayed(boolean played) {
+		this.played = played;
 	}
 
 	@Override
@@ -74,6 +91,7 @@ public class Card implements Serializable {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + (played ? 1231 : 1237);
 		result = prime * result + ((rankName == null) ? 0 : rankName.hashCode());
 		result = prime * result + ((rankValue == null) ? 0 : rankValue.hashCode());
 		result = prime * result + ((suite == null) ? 0 : suite.hashCode());
@@ -89,6 +107,8 @@ public class Card implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Card other = (Card) obj;
+		if (played != other.played)
+			return false;
 		if (rankName == null) {
 			if (other.rankName != null)
 				return false;

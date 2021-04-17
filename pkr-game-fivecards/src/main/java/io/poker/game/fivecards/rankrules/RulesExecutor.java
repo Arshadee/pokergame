@@ -11,6 +11,17 @@ import io.poker.core.IRankRule;
 import io.poker.models.Card;
 import io.poker.models.Hand;
 
+/**
+ * This is class houses the functions required for the 5 cards game 
+ * which is decoupled from the solution and therefore easily interchangeable
+ * 
+ * It has to extend AbstractRulesExecutor
+ * 
+ * This implementation used specific rule set for 5 card game included in this package
+ * 
+ * @author arshadmayet
+ *
+ */
 @Component
 public class RulesExecutor extends AbstractRulesExecutor {
 

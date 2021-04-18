@@ -7,17 +7,17 @@
 https://github.com/Arshadee/pokergame.git
 
 ## Build / Compile and Run the application using my scripts
-In the main project folder run the following: on MacOS / Unix Operating Systems
+In the main project folder run the following: on MacOS / Unix Operating Systems <br>
 **chmod +rx buildRun.sh** <br>
 **./buildRun.sh**
 
 ## Run the application only using my scripts
-In the main project folder, **pokergame-master**, run the following: on MacOS / Unix Operating Systems
+In the main project folder, **pokergame-master**, run the following: on MacOS / Unix Operating Systems <br>
 **chmod +rx run.sh** <br>
 .**/run.sh**
 
 ## Build / Compile the application using maven
-In command-Line / term navigate to the main project folder, **pokergame-master**,
+In command-Line / term navigate to the main project folder, **pokergame-master**
 and run : **mvn clean install**  
 
 ## Run the application  

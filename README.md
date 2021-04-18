@@ -7,13 +7,13 @@
 https://github.com/Arshadee/pokergame.git
 
 ## Build / Compile and Run the application using my scripts
-In the main project folder run the following: on macos / unis
-**chmod +rx buildRun.sh**
+In the main project folder run the following: on macOS / unix operating systems
+**chmod +rx buildRun.sh** <br>
 **./buildRun.sh**
 
 ## Run the application only using my scripts
-In the main project folder, **pokergame-master**, run the following: on mac-os / unix operating systems
-**chmod +rx run.sh**
+In the main project folder, **pokergame-master**, run the following: on macOS / unix operating systems
+**chmod +rx run.sh** <br>
 .**/run.sh**
 
 ## Build / Compile the application using maven

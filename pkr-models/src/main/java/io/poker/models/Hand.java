@@ -1,7 +1,9 @@
 package io.poker.models;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * This class to be instantiated for object to hold the hand thats dealt and its rank
@@ -41,15 +43,13 @@ public class Hand {
 
 	@Override
 	public String toString() {
-		String output = "Hand [hand=" + hand + ", "+System.lineSeparator()+"handRank=" + handRank + "]";//+System.lineSeparator();
+		String output = "hand=" + hand + ", "+System.lineSeparator()+ handRank + "]";
 		output =output+"\n -----> \n";
 		for(Card card : hand) {
-			output = output+"["+card.getRankName()+" "+card.getSuite()+"] ";
+			output = output+"["+card.getRankName().replace("_", "")+" "+card.getSuiteSymbol()+"] ";
 		}
-		output = output+System.lineSeparator()+" handRank = " + handRank;
+		output = output+System.lineSeparator()+ handRank;
 		return output;
 	}
-	
-	
     
 }

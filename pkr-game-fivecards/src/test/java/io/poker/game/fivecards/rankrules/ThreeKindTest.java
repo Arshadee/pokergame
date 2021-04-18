@@ -19,11 +19,11 @@ public class ThreeKindTest {
 	@Test
 	void testThreeKindMatchOne() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("Ace", 14, "Clubs"));
-		hand1.add(new Card("10", 10, "Clubs"));
-		hand1.add(new Card("Jack", 11, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand1.add(new Card("10", 10, "Clubs","\u2663"));
+		hand1.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand1);
@@ -33,11 +33,11 @@ public class ThreeKindTest {
 	@Test
 	void testThreeKindNoMatchOne() {
 		List<Card> hand2 = new ArrayList<>();
-		hand2.add(new Card("Ace", 14, "Hearts"));
-		hand2.add(new Card("Ace", 14, "Spades"));
-		hand2.add(new Card("King", 13, "Clubs"));
-		hand2.add(new Card("10", 10, "Clubs"));
-		hand2.add(new Card("Jack", 11, "Clubs"));
+		hand2.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand2.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand2.add(new Card("King", 13, "Clubs","\u2663"));
+		hand2.add(new Card("10", 10, "Clubs","\u2663"));
+		hand2.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand2);
@@ -48,11 +48,11 @@ public class ThreeKindTest {
 	@Test
 	public void testThreeKindhMatchingHand() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("Ace", 14, "Clubs"));
-		hand1.add(new Card("10", 10, "Clubs"));
-		hand1.add(new Card("Jack", 11, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand1.add(new Card("10", 10, "Clubs","\u2663"));
+		hand1.add(new Card("Jack", 11, "Clubs","\u2663"));
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 

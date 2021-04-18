@@ -19,11 +19,11 @@ public class StraightTest {
 	@Test
 	void testStraightMatchOne() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("10", 10, "Hearts"));
-		hand1.add(new Card("Queen", 12, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Jack", 11, "Hearts"));
-		hand1.add(new Card("King", 13, "Clubs"));
+		hand1.add(new Card("10", 10, "Hearts","\u2764"));
+		hand1.add(new Card("Queen", 12, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Jack", 11, "Hearts","\u2764"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand1);
@@ -33,11 +33,11 @@ public class StraightTest {
 	@Test
 	void testStraightMatchTwo() {
 		List<Card> hand2 = new ArrayList<>();
-		hand2.add(new Card("Ace", 14, "Hearts"));
-		hand2.add(new Card("3", 3, "Hearts"));
-		hand2.add(new Card("5", 5, "Hearts"));
-		hand2.add(new Card("4", 4, "Hearts"));
-		hand2.add(new Card("2", 2, "Clubs"));
+		hand2.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand2.add(new Card("3", 3, "Hearts","\u2764"));
+		hand2.add(new Card("5", 5, "Hearts","\u2764"));
+		hand2.add(new Card("4", 4, "Hearts","\u2764"));
+		hand2.add(new Card("2", 2, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand2);
@@ -48,11 +48,11 @@ public class StraightTest {
 	void testStraightNoMatchTwo() {
 
 		List<Card> hand3 = new ArrayList<>();
-		hand3.add(new Card("10", 10, "Hearts"));
-		hand3.add(new Card("3", 3, "Hearts"));
-		hand3.add(new Card("2", 2, "Hearts"));
-		hand3.add(new Card("King", 13, "Hearts"));
-		hand3.add(new Card("Ace", 14, "Hearts"));
+		hand3.add(new Card("10", 10, "Hearts","\u2764"));
+		hand3.add(new Card("3", 3, "Hearts","\u2764"));
+		hand3.add(new Card("2", 2, "Hearts","\u2764"));
+		hand3.add(new Card("King", 13, "Hearts","\u2764"));
+		hand3.add(new Card("Ace", 14, "Hearts","\u2764"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand3);
@@ -63,11 +63,11 @@ public class StraightTest {
 	@Test
 	public void testThreeKindhMatchingHand() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("10", 10, "Hearts"));
-		hand1.add(new Card("Queen", 12, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Jack", 11, "Hearts"));
-		hand1.add(new Card("King", 13, "Clubs"));
+		hand1.add(new Card("10", 10, "Hearts","\u2764"));
+		hand1.add(new Card("Queen", 12, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Jack", 11, "Hearts","\u2764"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 

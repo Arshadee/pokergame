@@ -33,7 +33,8 @@ public class MyShuffle implements IShuffle{
 				.boxed() // <-- converts them to Integers
 				.collect(Collectors.toList()); // <-- collects the values to a list
 
-		Collections.shuffle(integers);
+		for(int i =0; i<3;i++) Collections.shuffle(integers);
+
 
 		for (Integer i : integers) {
 			shuffledCards.add(cards.get(i));

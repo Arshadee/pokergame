@@ -1,4 +1,5 @@
 /Users/arshadmayet/Documents/workspace-spring-tool-suite-4-4.5.0.RELEASE/pkr-main/pkr-core/src/main/java/io/poker/core/Deck.java
+/Users/arshadmayet/Documents/workspace-spring-tool-suite-4-4.5.0.RELEASE/pkr-main/pkr-core/src/main/java/io/poker/core/IShuffle.java
 /Users/arshadmayet/Documents/workspace-spring-tool-suite-4-4.5.0.RELEASE/pkr-main/pkr-core/src/main/java/io/poker/core/AbstractRulesExecutor.java
 /Users/arshadmayet/Documents/workspace-spring-tool-suite-4-4.5.0.RELEASE/pkr-main/pkr-core/src/main/java/io/poker/core/IFunctions.java
 /Users/arshadmayet/Documents/workspace-spring-tool-suite-4-4.5.0.RELEASE/pkr-main/pkr-core/src/main/java/io/poker/core/IRankRule.java

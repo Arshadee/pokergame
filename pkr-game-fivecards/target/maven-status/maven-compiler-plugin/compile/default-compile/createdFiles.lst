@@ -1,0 +1,11 @@
+io/poker/game/fivecards/rankrules/FourKind.class
+io/poker/game/fivecards/rankrules/RulesExecutor.class
+io/poker/game/fivecards/rankrules/FullHouse.class
+io/poker/game/fivecards/rankrules/OnePair.class
+io/poker/game/fivecards/rankrules/TwoPairs.class
+io/poker/game/fivecards/functions/Functions.class
+io/poker/game/fivecards/rankrules/ThreeKind.class
+io/poker/game/fivecards/rankrules/Straight.class
+io/poker/game/fivecards/rankrules/Flush.class
+io/poker/game/fivecards/rankrules/HighCards.class
+io/poker/game/fivecards/rankrules/StraightFlush.class

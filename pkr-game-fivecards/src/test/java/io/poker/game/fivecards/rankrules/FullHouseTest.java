@@ -18,11 +18,11 @@ public class FullHouseTest {
 	@Test
 	void testFullHouseMatchOne() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("Ace", 14, "Clubs"));
-		hand1.add(new Card("King", 13, "Hearts"));
-		hand1.add(new Card("King", 13, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand1.add(new Card("King", 13, "Hearts","\u2764"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.check(hand1).getClass() == FullHouse.class;
@@ -32,11 +32,11 @@ public class FullHouseTest {
 	@Test
 	void testFullHouseMatchTwo() {
 		List<Card> hand2 = new ArrayList<>();
-		hand2.add(new Card("Ace", 14, "Hearts"));
-		hand2.add(new Card("Ace", 14, "Spades"));
-		hand2.add(new Card("King", 13, "Spades"));
-		hand2.add(new Card("King", 13, "Hearts"));
-		hand2.add(new Card("King", 13, "Clubs"));
+		hand2.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand2.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand2.add(new Card("King", 13, "Spades","\u2660"));
+		hand2.add(new Card("King", 13, "Hearts","\u2764"));
+		hand2.add(new Card("King", 13, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand2);
@@ -46,11 +46,11 @@ public class FullHouseTest {
 	@Test
 	void testFullHouseNoMatchOne() {
 		List<Card> hand3 = new ArrayList<>();
-		hand3.add(new Card("Ace", 14, "Hearts"));
-		hand3.add(new Card("Ace", 14, "Spades"));
-		hand3.add(new Card("Ace", 14, "Clubs"));
-		hand3.add(new Card("King", 13, "Hearts"));
-		hand3.add(new Card("Queen", 12, "Clubs"));
+		hand3.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand3.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand3.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand3.add(new Card("King", 13, "Hearts","\u2764"));
+		hand3.add(new Card("Queen", 12, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand3);
@@ -60,11 +60,11 @@ public class FullHouseTest {
 	@Test
 	void testFullHouseNoMatchTwo() {
 		List<Card> hand4 = new ArrayList<>();
-		hand4.add(new Card("Ace", 14, "Hearts"));
-		hand4.add(new Card("Ace", 14, "Spades"));
-		hand4.add(new Card("Queen", 12, "Clubs"));
-		hand4.add(new Card("King", 13, "Hearts"));
-		hand4.add(new Card("King", 13, "Clubs"));
+		hand4.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand4.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand4.add(new Card("Queen", 12, "Clubs","\u2663"));
+		hand4.add(new Card("King", 13, "Hearts","\u2764"));
+		hand4.add(new Card("King", 13, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand4);
@@ -75,11 +75,11 @@ public class FullHouseTest {
 	@Test
 	public void testFullHouseMatchingHand() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("Ace", 14, "Clubs"));
-		hand1.add(new Card("King", 13, "Hearts"));
-		hand1.add(new Card("King", 13, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand1.add(new Card("King", 13, "Hearts","\u2764"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 		

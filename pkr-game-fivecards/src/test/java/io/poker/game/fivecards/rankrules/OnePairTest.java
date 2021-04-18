@@ -15,15 +15,15 @@ public class OnePairTest {
 
 	IRankRule set = new OnePair();
 	AbstractRulesExecutor rulesExecutor = new RulesExecutor();
-
+	
 	@Test
 	void testOnePairMatchOne() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("King", 13, "Clubs"));
-		hand1.add(new Card("10", 10, "Clubs"));
-		hand1.add(new Card("Jack", 11, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
+		hand1.add(new Card("10", 10, "Clubs","\u2663"));
+		hand1.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand1);
@@ -34,11 +34,11 @@ public class OnePairTest {
 	void testOnePairNoMatchOne() {
 		List<Card> hand2 = new ArrayList<>();
 
-		hand2.add(new Card("Ace", 14, "Hearts"));
-		hand2.add(new Card("Queen", 12, "Spades"));
-		hand2.add(new Card("King", 13, "Clubs"));
-		hand2.add(new Card("10", 10, "Clubs"));
-		hand2.add(new Card("Jack", 11, "Clubs"));
+		hand2.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand2.add(new Card("Queen", 12, "Spades","\u2660"));
+		hand2.add(new Card("King", 13, "Clubs","\u2663"));
+		hand2.add(new Card("10", 10, "Clubs","\u2663"));
+		hand2.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		//Boolean actual = (set.check(hand2) == null)? false : set.check(hand2).getClass() == OnePair.class;
@@ -50,11 +50,11 @@ public class OnePairTest {
 	void testOnePairNoMatchTwo() {
 		List<Card> hand3 = new ArrayList<>();
 
-		hand3.add(new Card("Ace", 14, "Hearts"));
-		hand3.add(new Card("Ace", 14, "Spades"));
-		hand3.add(new Card("Ace", 14, "Clubs"));
-		hand3.add(new Card("10", 10, "Clubs"));
-		hand3.add(new Card("Jack", 11, "Clubs"));
+		hand3.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand3.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand3.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand3.add(new Card("10", 10, "Clubs","\u2663"));
+		hand3.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand3);
@@ -65,11 +65,11 @@ public class OnePairTest {
 	@Test
 	public void testOnePairMatchingHand() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("King", 13, "Clubs"));
-		hand1.add(new Card("10", 10, "Clubs"));
-		hand1.add(new Card("Jack", 11, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("King", 13, "Clubs","\u2663"));
+		hand1.add(new Card("10", 10, "Clubs","\u2663"));
+		hand1.add(new Card("Jack", 11, "Clubs","\u2663"));
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 

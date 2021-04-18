@@ -1,3 +1,5 @@
+io/poker/models/Dealer.class
+io/poker/models/HandRank.class
+io/poker/models/GameStore.class
 io/poker/models/Card.class
 io/poker/models/Hand.class
-io/poker/models/HandRank.class

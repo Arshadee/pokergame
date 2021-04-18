@@ -1,6 +1,8 @@
 package io.poker.models;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * This class is a card model
@@ -18,6 +20,7 @@ public class Card implements Serializable {
 	private String rankName;
 	private Integer rankValue;
 	private String suite;
+	private String suiteSymbol;
 	private boolean played;
 
 	/**   *
@@ -25,11 +28,12 @@ public class Card implements Serializable {
 	 */
 	public Card() {}
 
-	public Card(String rankName, Integer rankValue, String suite) {
+	public Card(String rankName, Integer rankValue, String suite, String suiteSymbol) {
 		this.rankName =  rankName;
 		this.rankValue = rankValue;
 		this.suite = suite;
 		this.played = false;
+		this.suiteSymbol = suiteSymbol;
 	}
 
 	public String getRankName() {
@@ -128,5 +132,13 @@ public class Card implements Serializable {
 	}
 
 	
+	public String getSuiteSymbol() {
+		return suiteSymbol;
+	}
+
+	public void setSuiteSymbol(String suiteSymbol) {
+		this.suiteSymbol = suiteSymbol;
+	}
+
 	
 }

@@ -52,13 +52,13 @@ public class RulesExecutor extends AbstractRulesExecutor {
 			IllegalAccessException, ClassNotFoundException, IllegalArgumentException, InvocationTargetException {
 
 		System.out.println("RulesExecutor - start");
-
+		
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Ace", 14, "Spades"));
-		hand1.add(new Card("Ace", 14, "Clubs"));
-		hand1.add(new Card("10", 10, "Clubs"));
-		hand1.add(new Card("Jack", 11, "Clubs"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand1.add(new Card("Ace", 14, "Clubs","\u2663"));
+		hand1.add(new Card("10", 10, "Clubs","\u2663"));
+		hand1.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		AbstractRulesExecutor rulesExecutor = new RulesExecutor();
 		System.out.println(rulesExecutor.getRuleSetPackageName());

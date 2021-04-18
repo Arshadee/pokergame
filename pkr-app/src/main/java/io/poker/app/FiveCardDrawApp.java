@@ -20,7 +20,6 @@ public class FiveCardDrawApp {
 		PokerGameController controller = factory.getBean(PokerGameController.class);
 		String gameId = controller.getGenGameId();
 		controller.getShuffledCards(gameId);
-		System.out.println(controller.isGameOver(gameId));
 		
 		while (
 				(!controller.isGameOver(gameId)) &&
@@ -29,7 +28,7 @@ public class FiveCardDrawApp {
 			System.out.println();
 			System.out.println("*** Poker 5 Card Deal Evaluation ***");
 			controller.play(gameId);
-			System.out.println(controller.getNumberOfCardsInPlay(gameId));
+			System.out.println("Cards left : "+controller.getNumberOfCardsInPlay(gameId));
 			System.out.println("--------");
 			System.out.println("To try another hand press 'c' or any other key to quit");
 			@SuppressWarnings("resource")
@@ -43,5 +42,4 @@ public class FiveCardDrawApp {
 		}
 
 	}
-	
 }

@@ -15,15 +15,15 @@ public class HighCardsTest {
 
 	IRankRule set = new HighCards();
 	AbstractRulesExecutor rulesExecutor = new RulesExecutor();
-
+	
 	@Test
 	void testHighCardsMatchOne() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Queen", 12, "Hearts"));
-		hand1.add(new Card("10", 10, "Spades"));
-		hand1.add(new Card("8", 8, "Clubs"));
-		hand1.add(new Card("6", 6, "Diamonds"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Queen", 12, "Hearts","\u2764"));
+		hand1.add(new Card("_10", 10, "Spades","\u2660"));
+		hand1.add(new Card("_8", 8, "Clubs","\u2663"));
+		hand1.add(new Card("_6", 6, "Diamonds","\u2666"));
 
 		Boolean expected = true;
 		Boolean actual = set.singleCheck(hand1);
@@ -33,11 +33,11 @@ public class HighCardsTest {
 	@Test
 	void testHighCardsNoMatchOne() {
 		List<Card> hand2 = new ArrayList<>();
-		hand2.add(new Card("Ace", 14, "Hearts"));
-		hand2.add(new Card("Ace", 14, "Spades"));
-		hand2.add(new Card("King", 13, "Clubs"));
-		hand2.add(new Card("10", 10, "Clubs"));
-		hand2.add(new Card("Jack", 11, "Clubs"));
+		hand2.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand2.add(new Card("Ace", 14, "Spades","\u2660"));
+		hand2.add(new Card("King", 13, "Clubs","\u2663"));
+		hand2.add(new Card("_10", 10, "Clubs","\u2663"));
+		hand2.add(new Card("Jack", 11, "Clubs","\u2663"));
 
 		Boolean expected = false;
 		Boolean actual = set.singleCheck(hand2);
@@ -48,11 +48,11 @@ public class HighCardsTest {
 	@Test
 	public void testHighCardsMatchingHand() {
 		List<Card> hand1 = new ArrayList<>();
-		hand1.add(new Card("Ace", 14, "Hearts"));
-		hand1.add(new Card("Queen", 12, "Hearts"));
-		hand1.add(new Card("10", 10, "Spades"));
-		hand1.add(new Card("8", 8, "Clubs"));
-		hand1.add(new Card("6", 6, "Diamonds"));
+		hand1.add(new Card("Ace", 14, "Hearts","\u2764"));
+		hand1.add(new Card("Queen", 12, "Hearts","\u2764"));
+		hand1.add(new Card("_10", 10, "Spades","\u2660"));
+		hand1.add(new Card("_8", 8, "Clubs","\u2663"));
+		hand1.add(new Card("_6", 6, "Diamonds","\u2666"));
 		Hand hand = new Hand();
 		hand.setHand(hand1);
 
